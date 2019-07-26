@@ -12,7 +12,8 @@ var Car = /** @class */ (function () {
         //x = "";
         var car = document.getElementById(carId);
         x = car.textContent;
-        car.innerText = x + (" This car is " + this.model + " which has " + this.doors + " doors");
+        car.innerText =
+            x + (" This car is " + this.model + " which has " + this.doors + " doors");
         if (carId === "car2")
             car.style.background = "orange";
         if (carId === "car1")
