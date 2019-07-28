@@ -6,17 +6,14 @@ var Car = /** @class */ (function () {
         this.carId = carId;
     }
     Car.prototype.make = function () {
-        var x;
-        var carId;
-        carId = this.carId;
-        //x = "";
-        var car = document.getElementById(carId);
-        x = car.textContent;
+        var prevText;
+        var car = document.getElementById(this.carId);
+        prevText = car.textContent;
         car.innerText =
-            x + (" This car is " + this.model + " which has " + this.doors + " doors");
-        if (carId === "car2")
+            prevText + (" This car is " + this.model + " which has " + this.doors + " doors");
+        if (this.carId === "car2")
             car.style.background = "orange";
-        if (carId === "car1")
+        if (this.carId === "car1")
             car.style.background = "pink";
     };
     return Car;
