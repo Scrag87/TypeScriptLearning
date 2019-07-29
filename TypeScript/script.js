@@ -7,7 +7,6 @@ var Car = /** @class */ (function () {
     }
     Car.prototype.make = function () {
         var prevText;
-        var car = document.getElementById(this.carId);
         prevText = car.textContent;
         car.innerText =
             prevText + (" This car is " + this.model + " which has " + this.doors + " doors");

@@ -13,7 +13,7 @@ class Car {
 
     make(): void {
         let prevText: string;
-        let car = document.getElementById(this.carId);
+
         prevText = car.textContent;
         car.innerText =
             prevText + ` This car is ${this.model} which has ${this.doors} doors`;
